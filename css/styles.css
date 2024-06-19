@@ -1,0 +1,89 @@
+body {
+    background-color: #F3F4F6;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.contenedor {
+
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #E5E7EB;
+    text-align: right;  
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.contenedor_botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+
+input[type="button"] {
+    padding: 10px;
+    background-color: #E5E7EB;
+    color: #020000;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.boton_reinicio {
+    grid-column: 1 / span 4;
+
+}
+
+
+
+input[type="button"].boton_enfasis {
+    background-color: #F97316;
+    color: #fff;
+}
+
+input[type="button"]:hover {
+    background-color: #92969c;
+    color: #020000;
+}
+
+input[type="button"].boton_enfasis:hover {
+    background-color: #D15F00; /* Un color más oscuro para el hover */
+    color: #ffffff;
+}
+
+
